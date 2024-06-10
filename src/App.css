@@ -2,37 +2,339 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
+  display: flex;
+}
+
+.user-username {
+  /* border: 1px solid black; */
+  /* margin-top: 0.8em; */
+}
+
+.user-img {
+  height: 10em;
+  border: 1px solid black;
+  border-radius: 50%;margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.hat-card {
+  border: 1px solid black;
+  margin: 1em;
+  width:13em;
+  background-color: black;
+  /* color: white; */
+  padding: 1em;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.hat-pic {
+  height: 13em;
+  width: 11em;
+  border: 2px solid red;
+  border-radius: 10%;
+}
+
+.hat-pic:hover {
+  cursor: pointer;
+}
+
+.modal-hat-pic {
+  /* height: 100%; */
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 10%;
+}
+
+.about-me {
+  border: 1px solid black;
+  padding: 0.4em;
+  border-radius: 3em;
+  background-color: white;
+}
+
+.about-me-section {
+  padding: 0 2em 0.1em 2em;
+  font-size: 13px;
+  margin-bottom: 0.1em;
+}
+
+.hat-desc {
+  font-size: 14px;
+}
+
+.hat-holder {
+  margin-top: 1.2em;
+}
+
+.hat-details-btn {
+  margin-top: 1em;
+  font-size: 12px;
+}
+
+.hat-submit {
+  /* background-color: white; */
+  margin-top: 2em;
+  padding: em;
+}
+
+.comment-hr {
+  margin: 0.3em 0.3em;
+}
+
+.separator {
+  margin: 0;
+}
+
+.comment-input {
+  /* width: 26em; */
+}
+
+.comment-card-box {
+  border: 1px solid black;
+  margin-top: 0.9em;
+  padding: 0.6em;
+  border-radius: 1em;
+}
+
+.commenter-img {
+  display: flex;
+  align-items: center;
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+}
+
+.input-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0;
+}
+
+.for-input {
+  margin: 0;
+}
+
+.comment-title {
+  padding-right: 2em;
+}
+
+.comment-section {
+  font-size: 13px;
+}
+
+.input-comment {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.avi-name {
+  margin: 0.1em;
+  display: flex;
+  align-items: baseline;
+}
+
+.user-info-row {
+  display: inline-flex;
+}
+
+.commenter-info {
+  margin: 0;
+  padding-left: 0.5em;
+  font-size: 13px;
+}
+
+.comment-date {
+  display: flex;
+  font-size: 12px;
+  padding-left: 0.5em;
+}
+
+.friends {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
+  margin-top: 1em;
+}
+
+.hat-title {
+  margin: 0.4em 0;
+  width: 80%;
+  border-radius: 0.4em;
+}
+
+.hat-type-dropdown {
+  
+}
+
+.submission-form {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: white;
+}
+
+.selection-type {
+  margin-top: 0.7em;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.m-d {
+  font-size: 13px;
+}
+
+.modal-hr {
+  margin: 0.5em;
+}
+
+.comment-body {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+.home-search {
+  margin: 0.6em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout {
+  padding: 1em;
+}
+
+.search-text {
+  margin: 0;
+}
+
+.friend-list-pics {
+  height: 6em;
+  width: 6em;
+  border-radius:  50%;
+  border: 2px solid black;
+}
+
+.friend-list-pics:hover {
+  height: 6em;
+  width: 6em;
+  border-radius:  50%;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.friend-card-border {
+  padding: 1em;
+  border-radius: 2em;
+  /* margin: 0.1em; */
+}
+
+.f-fname-display {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.friend-name-display {
+  margin: 0 0 0 1em;
+}
+
+.friend-name-display:hover {
+  text-decoration: none;
+  /* color: red; */
+  font-weight: 500;
+  margin: 0 0 0 1em;
+  cursor: pointer;
+}
+
+.friends {
+  padding: 1em;
+  border-radius: 1.3em;
+  background-color: white;
+}
+
+.friend-link {
+  text-decoration: none;
+  color: black;
+}
+
+.friend-link:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.submission-form {
+  border-radius: 1.3em;
+}
+
+.friend-count {
+  font-weight: 700;
+}
+
+.friend-list-img {
+  height: 7em;
+  width: 7em;
+  border-radius: 4em;
+}
+
+.user-friend-section {
+  display: flex;
+  align-items: center;
+}
+
+.friend-name-section {
+  margin: 1em 0 0.4em 0;
+}
+
+.friend-about-me {
+  margin: 1em 0;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px slid black;
+}
+
+.userInfo-profile-img {
+ height: 8em;
+ width: 10em;
+ border-radius: 2em;
+}
+
+.hat-section {
+  border: 1px solid black;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 1.3em;
+  background-color: white;
+}
+
+.all-hats-text {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown {
+  z-index: 1;
+}
+
+.login, .signup {
+  border: 1px solid black;
+  padding: 2em;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.register-link {
+  text-decoration: none;
+  color: black;
 }
